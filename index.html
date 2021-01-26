@@ -398,6 +398,9 @@
             if(scroH >1000){ //距离顶部大于100px时
                 $('.back_top').addClass('btn_show');
             }
+            if(scroH <1000){ //距离顶部大于100px时
+                $('.back_top').removeClass('btn_show');
+            }
         });
         // 点击更多品牌
         $('.more_btn').click(function(){
