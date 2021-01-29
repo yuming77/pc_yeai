@@ -217,6 +217,8 @@
     $(function(){
         $('.tabs .tab').click(function(){
             let index = $(this).index();
+            $('.tabs .tab').removeClass('tab_act');
+            $(this).addClass('tab_act');
             $('.content_box').removeClass('content_act');
             $('.content_box').eq(index).addClass('content_act');
         })
